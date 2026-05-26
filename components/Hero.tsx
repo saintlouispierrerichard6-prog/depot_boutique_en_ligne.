@@ -1,3 +1,4 @@
+import "./Hero.css";
 import Image from "next/image";
 
 export default function AfficherHero(){
@@ -7,10 +8,11 @@ export default function AfficherHero(){
         <div className="containerhero">
             
             <div id="containerimage">
+    
+                <Image src="/images/vetement4.png" alt="Images Hero de Elite Store" width={250} height={250}/>
                 <Image src="/images/hero4.png" alt="Images Hero de Elite Store" width={250} height={250}/>
-                <Image src="/images/hero1.png" alt="Images Hero de Elite Store" width={250} height={250}/>
-                <Image src="/images/hero5.png" alt="Images Hero de Elite Store" width={250} height={250}/>
-                <Image src="/images/hero6.png" alt="Images Hero de Elite Store" width={250} height={250}/>
+                <Image src="/images/hero.png" alt="Images Hero de Elite Store" width={250} height={250}/>
+                <Image src="/images/hero3.png" alt="Images Hero de Elite Store" width={250} height={250}/>
             </div>
 
             <div id="containerspeech">
@@ -19,7 +21,6 @@ export default function AfficherHero(){
                 <button>Découvrir nos produits</button>
             </div>
            
-         
         </div>
 
     );

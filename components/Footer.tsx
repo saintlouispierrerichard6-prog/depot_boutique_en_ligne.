@@ -1,4 +1,4 @@
-
+import "./Footer.css"
 import {FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaTiktok} from "react-icons/fa";
 export default function AfficherFooter(){
 

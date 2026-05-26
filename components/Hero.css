@@ -1,0 +1,77 @@
+
+.containerhero{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+
+    
+}
+
+.containerhero #containerimage{
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.containerhero #containerimage img{
+
+   width: 25%;
+   height: 38rem;
+   object-fit: cover;
+
+}
+
+.containerhero #containerspeech{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+
+.containerhero #containerspeech h2, p {
+
+  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #C9A227;
+    font-size: clamp(3em, 6vh, 7em);
+    font-weight: bolder;
+    font-style: italic;
+   max-width: 50rem;
+}
+
+.containerhero #containerspeech button{
+
+  
+    background-color: burlywood;
+    color: black;
+    padding: 1rem;
+    font-size: clamp(1em, 6vh, 7em);
+    font-weight: bolder;
+    font-style: normal;   
+    border-radius: 25px;
+
+  
+}
+
+
+.containerhero #containerspeech button:hover{
+
+  
+    background-color: whitesmoke;
+    
+
+  
+}
