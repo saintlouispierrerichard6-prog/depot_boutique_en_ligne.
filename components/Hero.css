@@ -1,0 +1,133 @@
+
+.containerhero{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+
+    
+}
+
+.containerhero #containerimage{
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.containerhero #containerimage img{
+
+   width: 25%;
+   height: 38rem;
+   object-fit: cover;
+
+}
+
+.containerhero #containerspeech{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+
+.containerhero #containerspeech h2,
+.containerhero #containerspeech p{
+
+  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #C9A227;
+    font-size: clamp(3em, 6vh, 7em);
+    font-weight: bolder;
+    font-style: italic;
+    max-width: 50rem;
+}
+
+.containerhero #containerspeech button{
+
+  
+    background-color: burlywood;
+    color: black;
+    padding: 1rem;
+    font-size: clamp(1em, 6vh, 7em);
+    font-weight: bolder;
+    font-style: normal;   
+    border-radius: 25px;
+
+  
+}
+
+
+.containerhero #containerspeech button:hover{
+
+  
+    background-color: whitesmoke;
+    
+}
+
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .containerhero #containerimage img {
+    height: 30rem;
+  }
+
+  .containerhero #containerspeech h2,
+  .containerhero #containerspeech p {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .containerhero #containerspeech button {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .containerhero #containerimage {
+    flex-wrap: wrap;
+  }
+
+  .containerhero #containerimage img {
+    width: 50%;
+    height: 18rem;
+  }
+
+  .containerhero #containerspeech h2,
+  .containerhero #containerspeech p {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+
+  .containerhero #containerspeech button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+/* Petit mobile */
+@media (max-width: 480px) {
+  .containerhero #containerimage img {
+    width: 100%;
+    height: 14rem;
+  }
+
+  .containerhero #containerspeech h2,
+  .containerhero #containerspeech p {
+    font-size: 1.6rem;
+  }
+
+  .containerhero #containerspeech button {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+  }
+}
