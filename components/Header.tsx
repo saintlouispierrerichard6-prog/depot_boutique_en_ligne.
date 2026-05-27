@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 import Image from "next/image";
 import "./Header.css";
 import {FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaTiktok} from "react-icons/fa";
@@ -28,12 +28,20 @@ export default function AfficherHeader(){
 
                 <nav className="barmenu">
                     <ul>
-                        <li>Accueil</li>
-                        <li>Produits</li>
-                        <li>Actualités</li>
-                        <li>Contacts</li>
-                        <li>Créer un compte</li>
+                            <li>
+                                <Link href="/">Accueil</Link>
+                            </li>
 
+                            <li>
+                                <Link href="/produits">Produits</Link>
+                            </li>
+
+                            <li>
+                                <Link href="/panier">Panier</Link>
+                            </li>
+
+                            <li>Actualités</li>
+                            <li>Contacts</li>
                     </ul>
                 </nav>
         </header>

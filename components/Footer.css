@@ -115,3 +115,78 @@
 
 }
 
+
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .containerfooter #containergeneral1 {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .containerfooter #containergeneral1 #infogenerale p,
+  .containerfooter #containergeneral1 #liensrapides p {
+    font-size: 1.6rem;
+  }
+
+  .containerfooter #containergeneral1 #liensrapides ul li {
+    font-size: 1.4rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .containerfooter #containergeneral1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .containerfooter #containergeneral1 #infogenerale p,
+  .containerfooter #containergeneral1 #liensrapides p {
+    font-size: 1.2rem;
+  }
+
+  .containerfooter #containergeneral1 #liensrapides ul li {
+    font-size: 1.1rem;
+  }
+
+  .containerfooter #containerreseauxsociaux p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .containerfooter #containerreseauxsociaux ul {
+    gap: 1.2rem;
+  }
+}
+
+/* Petit mobile */
+@media (max-width: 480px) {
+  .containerfooter #containergeneral1 {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .containerfooter #containergeneral1 #infogenerale p,
+  .containerfooter #containergeneral1 #liensrapides p {
+    font-size: 1rem;
+  }
+
+  .containerfooter #containergeneral1 #liensrapides ul li {
+    font-size: 0.95rem;
+  }
+
+  .containerfooter #containerreseauxsociaux p {
+    font-size: 1rem;
+  }
+
+  .containerfooter #containerreseauxsociaux ul {
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  .containerfooter #containerreseauxsociaux ul li {
+    font-size: 1.5rem;
+  }
+}

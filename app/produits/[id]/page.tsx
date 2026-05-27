@@ -33,12 +33,15 @@ export default async function ProductDetailsPage({ params }: PageProps) {
       <p>{product.prix} $</p>
 
       <h2>Variantes disponibles</h2>
-
       <ul>
         {product.variantes.map((variante) => (
           <li key={variante}>{variante}</li>
         ))}
       </ul>
+
+      <button className={styles.cartButton}>
+            Ajouter au panier
+      </button>
     </main>
   );
 }

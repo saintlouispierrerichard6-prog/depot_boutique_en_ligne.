@@ -1,0 +1,70 @@
+
+.panierPage{
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.panierPage h1 {
+  font-size: 2em;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.panierPage .panierMessage{
+  font-size: 1.7rem;
+  color: darkgoldenrod;
+  font-weight: 600;
+  font-style: normal;
+  max-width: none;
+  text-align: center;
+}
+
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .panierPage {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .panierPage h1 {
+    font-size: 1.8em;
+  }
+
+  .panierPage .panierMessage {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .panierPage {
+    padding: 2rem 1rem;
+  }
+
+  .panierPage h1 {
+    font-size: 1.6em;
+  }
+
+  .panierPage .panierMessage {
+    font-size: 1.25rem;
+  }
+}
+
+/* Petit mobile */
+@media (max-width: 480px) {
+  .panierPage {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .panierPage h1 {
+    font-size: 1.4em;
+  }
+
+  .panierPage .panierMessage {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
