@@ -1,18 +1,52 @@
 "use client";
+import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import "./ContactForm.css";
 
+// METE PUBLIC_KEY OU LA
+emailjs.init("9hXdJ1tfB6oae0rK1");
+
 export default function ContactForm() {
+
+  type ContactFormData = {
+    nom: string;
+    prenom: string;
+    email: string;
+    telephone: string;
+    adresse: string;
+    sexe: string;
+    profession: string;
+  };
+
   const {
     register,
     handleSubmit,
     formState: { errors },
     trigger,
-  } = useForm();
+  } = useForm<ContactFormData>();
 
-  const onSubmit = (data) => {
-    console.log("Données envoyées :", data);
-    alert("Formulaire envoyé avec succès !");
+  const onSubmit = (data: ContactFormData) => {
+    emailjs.send(
+     "service_qtwk5zh",
+     "template_u8r1a85",
+    {
+      nom: data.nom,
+      prenom: data.prenom,
+      email: data.email,
+      telephone: data.telephone,
+      adresse: data.adresse,
+      sexe: data.sexe,
+      profession: data.profession,
+    }
+)
+
+      .then(() => {
+        alert("Formulaire envoyé avec succès !");
+      })
+      .catch((error: any) => {
+        console.error("Erreur EmailJS :", JSON.stringify(error));
+        alert("Une erreur est survenue lors de l'envoi.");
+      });
   };
 
   // Regex pou sèlman lèt (Nom, Prénom, Profession)
